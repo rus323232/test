@@ -22,7 +22,7 @@ export class Routes {
       }, this.serviceController.getEntity)
       .post(this.serviceController.add);
 
-    app.route('/service/:contactId')
+    app.route('/service/:serviceId')
       .get(this.serviceController.getByID)
       .put(this.serviceController.update)
       .delete(this.serviceController.delete);
